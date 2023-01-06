@@ -13,7 +13,7 @@ game:GetService("RunService").Heartbeat:Connect(function()
 	    local R = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
 
 	    R = R*CF(0,0,0)
-	    R = R*CFA(math.rad(RandomNumberRange(180)),math.rad(RandomNumberRange(180)),math.rad(RandomNumberRange(180)))
+	    R = R*CFA(math.rad(GetRandomNumberFromRange(180)),math.rad(GetRandomNumberFromRange(180)),math.rad(GetRandomNumberFromRange(180)))
 	    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = R
 	    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = V3(1,1,1) * 16384
 	    task.wait()
