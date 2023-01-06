@@ -1,0 +1,6 @@
+game:GetService("RunService").RenderStepped:Connect(function()
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Sit == true then
+        wait(.1)
+        game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+    end
+end)
